@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh '''
                 docker stop ssk_container || true
-                docker rm container || true
+                docker rm ssk_container || true
                 '''
             }
         }
